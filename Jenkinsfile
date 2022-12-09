@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Read YAML') {
+      steps {
+        readFile 'pods.yml'
+      }
+    }
+
   }
 }
