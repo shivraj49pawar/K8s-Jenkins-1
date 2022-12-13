@@ -1,10 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('Get Pods') {
-        steps {
+     stage('Test_echo') {
+      steps {
         echo 'Hello'
       }
+    }
+    stage('Get Pods') {
       steps {
         sh 'kubectl apply -f pods.yml' 
         sh 'kubectl get pods'
