@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Get Pods') {
       steps {
-        sh 'kubectl apply -f pods.yaml' 
+        sh 'kubectl apply -f pods.yml' 
         sh 'kubectl get pods'
       }
     }
