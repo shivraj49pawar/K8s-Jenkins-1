@@ -21,7 +21,7 @@ spec:
 ---
 
 apiVersion: v1
-kind: POD
+kind: Pod
 metadata:
   name: woods
 spec:
@@ -33,7 +33,7 @@ spec:
 ---
 
 apiVersion: v1
-kind: POD
+kind: Pod
 metadata:
   name: sas
 spec:
