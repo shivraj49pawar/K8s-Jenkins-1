@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Get Pods') {
       steps {
-        sh 'kubectl apply -f pods.yml' 
+        sh 'kubectl apply -f pods_wp.yml' 
         sh 'kubectl get pods'
       }
     }
